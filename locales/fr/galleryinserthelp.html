@@ -1,0 +1,81 @@
+<html>
+<head>
+  <title>GalleryInsert</title>
+</head>
+
+<body>
+
+<h3>Présentation</h3>
+<dl>
+  <dt>Principe</dt>
+  <dd>L'objectif du plugin GalleryInsert est de permettre d'intégrer facilement des galeries d'image à l'intérieur d'un billet.<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex1.jpg'><img width='200px' src='index.php?pf=GalleryInsert/locales/img/ex1.jpg'></a></dd>
+  
+  <dt>Balises</dt>
+  <dd>Le plugin utilise un système de balise qui sont remplacées au moment de l'écriture du billet par la galerie correspondante. La balise la plus simple est <strong>"::gallery dir='toto'::"</strong> cette balise va afficher dans le billet une liste des images présentes dans le répertoire "toto" sous forme de miniatures cliquables.</dd>
+  <dd>La balise peut prendre d'autres formes selon le contenu à afficher et selon la forme sous laquelle on veut l'afficher. Par exemple, pour afficher les images "img1.jpg" et "img4.jpg" dans le répertoire "toto" la balise s'écrit <strong>"::gallery imgurl='toto;img1.jpg;img4.jpg'::"</strong></dd>
+  
+  <dt>Interface d'inclusion</dt>
+  <dd>Après installation du plugin une icône apparait dans la barre d'édition d'un billet (<img src='index.php?pf=GalleryInsert/icon.png'>). Un clic sur cette icône fait apparaitre la fenêtre d'insertion permettant de générer le code de la balise et de l'intégrer au billet en cours de rédaction.<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/insert.jpg'><img width='200px' src='index.php?pf=GalleryInsert/locales/img/insert.jpg'></a><br />
+  Après avoir sélectionné le répertoire contenant vos médias, vous pouvez soit sélectionner les images à inclure, soit inclue la totalité du répertoire, et sélectionner les options à prendre en compte.</dd>
+</dl>
+
+<h3>Options de taille</h3>
+<dl>
+  <dt>Tailles affichées</dt>
+  <dd>Pour sélectionner la taille de l'image affichée l'option est <strong>thumb='xx'</strong>. Où xx peut prendre différentes valeurs de taille d'image :
+  <ul><li>sq=square</li><li>t=miniature</li><li>s=petite</li><li>m=moyenne</li><li>o=originale</li></ul></dd>
+  <dd>Pour sélectionner la taille de l'image pointée par le lien l'option est <strong>linkto='xx'</strong>. Où xx peut prendre différentes valeurs de taille d'image :
+  <ul><li>sq=square</li><li>t=miniature</li><li>s=petite</li><li>m=moyenne</li><li>o=originale</li><li>none=pas de lien</li></ul></dd>
+  <dd>Exemple, affichage du répertoire "toto" au format moyen sans lien : <strong>::gallery dir='toto' thumb='m' linkto='none'::</strong></dd>
+</dl>
+
+<h3>Scripts jquery</h3>
+<dl>
+  <dt>Affichage via divbox</dt>
+  <dd>Le plugin GalleryInsert inclut le module divbox (<a target='_blank' href='http://jquery.phpbasic.com/divbox'>http://jquery.phpbasic.com/divbox</a>) permettant de zoomer sur les images, mais également d'afficher n'importe quel contenu multimédia (mp3, flv, ...) en activant cette option dans l'interface d'administration cela permet ainsi d'agrandir les images (à la façon d'une lightbox) mais également de parcourir le contenu multimédia des répertoires!</dd>
+  <dd>A noter que cette option est désactivée par défaut et que si vous l'activez dans l'interface d'administration il faut regénérer les billets contenant une galerie que vous auriez déjà créé. Pour cela il suffit d'ouvrir le billet et de le réenregistrer.</dd>
+  <dd>Exemple de divbox :<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex-divbox1.jpg'><img width='120px' src='index.php?pf=GalleryInsert/locales/img/ex-divbox1.jpg'></a>
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex-divbox2.jpg'><img width='120px' src='index.php?pf=GalleryInsert/locales/img/ex-divbox2.jpg'></a></dd>
+  
+  <dt>Affichage sous forme de carousel</dt>
+  <dd>L'ancien plugin jcarousel (<a target='_blank' href='http://sorgalla.com/jcarousel/'>http://sorgalla.com/jcarousel/</a>) a été remplacé par le plugin tosrus (<a target='_blank' href='http://tosrus.frebsite.nl'>http://tosrus.frebsite.nl</a>) permettant d'afficher la liste d'image sous forme de carousel. Cela permet d'afficher également les icônes des fichiers multimédia si l'option divbox précédente est activée. Par défaut les galeries ne sont pas affichées sous cette forme, pour afficher une galerie sous forme de carousel il faut tout d'abord activer l'option dans l'interface d'administration et ajouter l'option "carousel" à la balise de la galerie (exemple <strong>"::gallery dir='toto' carousel::"</strong>)</dd>
+  <dd>Exemple de carousel :<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex-carousel-tosrus.jpg'><img width='200px' src='index.php?pf=GalleryInsert/locales/img/ex-carousel-tosrus.jpg'></a></dd>
+  <!--<dd>Le plugin GalleryInsert inclut également le module jcarousel (<a target='_blank' href='http://sorgalla.com/jcarousel/'>http://sorgalla.com/jcarousel/</a>) permettant d'afficher la liste d'image sous forme de carousel. Cela permet d'afficher également les icônes des fichiers multimédia si l'option divbox précédente est activée. Par défaut les galeries ne sont pas affichées sous cette forme, pour afficher une galerie sous forme de carousel il faut tout d'abord activer l'option dans l'interface d'administration et ajouter l'option "carousel" à la balise de la galerie (exemple <strong>"::gallery dir='toto' carousel::"</strong>)</dd>
+  <dd>Exemple de caroussel :<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex-carousel.jpg'><img width='200px' src='index.php?pf=GalleryInsert/locales/img/ex-carousel.jpg'></a></dd>-->
+  
+  <dt>Affichage sous forme de "galleria"</dt>
+  <dd>Le plugin GalleryInsert inclut également le module galleria (<a target='_blank' href='http://galleria.aino.se/'>http://galleria.aino.se/</a>) permettant d'afficher la liste d'image sous forme de gallerie améliorée. Par défaut les galeries ne sont pas affichées sous cette forme, pour afficher une galerie sous forme de "galleria" il faut tout d'abord activer l'option dans l'interface d'administration et ajouter l'option caroussel à la balise de la galerie (exemple <strong>"::gallery dir='toto' caroussel::"</strong>). A noter qu'à présent la taille de l'affichage de la galleria et des miniatures peuvent être réglées dans les options du plugin.</dd>
+  <dd>Exemple de galleria :<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex-galleria.jpg'><img width='200px' src='index.php?pf=GalleryInsert/locales/img/ex-galleria.jpg'></a></dd>
+</dl>
+
+<h3>Metadonnées des images</h3>
+<dl>
+  <dt>Metadonnées des images</dt>
+  <dd>Il est possible d'insérer automatiquement certaine métadonnées présentes dans les images. Pour cela il faut inclure l'option "showmeta" à la balise de la galerie (exemple : <strong>"::gallery dir='toto' showmeta::"</strong>). Ainsi, au moment de la génération de la galerie le plugin va analyser l'image en en extraire les métadonnée et les ajouter à la suite du titre de l'image. La mise en forme des métadonnée est donnée par la chaîne Métadata modifiable dans les options.</dd>
+  <dd>Exemple de métadonnée :<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex-metadata.jpg'><img width='200px' src='index.php?pf=GalleryInsert/locales/img/ex-metadata.jpg'></a></dd>
+  <dd>La chaîne par défaut pour l'affichage des métadonnées est : <strong>[%FocalLength% - %FNumber% - %Exposure% - ISO:%ISOSpeedRatings%]</strong>. Les insertions possibles sont les suivantes :<ul><li>%Title%</li><li>%Description%</li><li>%Location%</li><li>%DateTimeOriginal%</li><li>%Make%</li><li>%Model%</li><li>%Lens%</li><li>%ExposureProgram%</li><li>%Exposure%</li><li>%FNumber%</li><li>%ISOSpeedRatings%</li><li>%FocalLength%</li><li>%ExposureBiasValue%</li><li>%MeteringMode%</li></ul></dd>
+</dl>
+
+<h3>Particularités</h3>
+<dl>
+  <dt>Génération du code</dt>
+  <dd>Pour gagner en efficacité le code html de la galerie n'est pas généré à chaque affichage du billet mais seulement au moment de l'enregistrement du billet. De cette manière lors de l'affichage du billet le code à afficher est disponible immédiatement. L'inconvénient de cette méthode est que du coup la galerie n'est pas totalement dynamique : la galerie doit être régénérée manuellement si le contenu du répertoire média est modifié, ou si vous modifiez des options.</dd>
+  <dd>Par exemple si vous avez créé une galerie avec l'option carousel. Mais que pour une raison quelconque vous avez par la suite désactivé l'option carousel alors la galerie ne sera pas affichée correctement, car elle est destinée à être affichée sous forme de carousel alors que le code correspondant est désactivé. Pour revenir à une galerie classique sans carousel vous devez ouvrir le billet puis simplement le réenregistrer.</dd>
+  
+  <dt>Mise à jour automatique des billets</dt>
+  <dd>Dans l'interface d'administration du plugin est affichée une liste des billets (ou pages) contenant une galerie. Cette liste permet d'accéder plus simplement à ses galeries, mais également des régénérer automatiquement le code html des galeries. Pour cela cliquez sur le bouton "Mise à jour des galeries dans les billets". Attention toutefois, même si cette fonction a été testée je ne peux garantir qu'elle n'engendre pas de problème imprévu. Pour cette raison, au moins avant ça première utilisation, je vous recommande de faire une sauvegarde de la base de donnée de votre blog. De plus cette option n'ayant pas été testée sur un grand nombre de post, il est possible que le script s'arrête de lui-même au bout d'un moment si le nombre de billet à regénérer est trop important.</dd>
+  
+  <dt>Mise en forme des miniatures</dt>
+  <dd>Vous pouvez modifier le style des miniatures via le plugin moreCSS ou directement dans le style.css du thème actif (exemple : <strong>#galleryinsert_tn { border: 1px solid black; margin: 0px 3px 0px 0px; }</strong>).</dd>
+  
+</dl>
+
+</body>
+</html>

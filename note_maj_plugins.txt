@@ -1,0 +1,11 @@
+### jgallery ###
+Dans jgallery.min.js
+browserHistory:!0 par browserHistory:!1
+maxMobileWidth:767 par maxMobileWidth:320
+thumbnailsHideOnMobile:!0 par thumbnailsHideOnMobile:!1
+Dans jgallery.min.css
+@media (max-width:767px) par @media (max-width:359px)
+
+### galleria ###
+Dans galleria.classic.css
+Attention aux url à remplacer par url(index.php?pf=GalleryInsert/galleria.1.5.7/themes/classic/

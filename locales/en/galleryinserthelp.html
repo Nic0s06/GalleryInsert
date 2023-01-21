@@ -1,0 +1,82 @@
+<html>
+<head>
+  <title>GalleryInsert</title>
+</head>
+
+<body>
+
+<h3>Presentation</h3>
+<dl>
+  <dt>Principe</dt>
+  <dd>The objective of the GalleryInsert plugin is to allow users to easily insert picture galleriez inside a post.<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex1.jpg'><img width='200px' src='index.php?pf=GalleryInsert/locales/img/ex1.jpg'></a></dd>
+  
+  <dt>Tag</dt>
+  <dd>The plugin uses a system of tags which are replaced by the corresponding gallery while the post is saved. The simpliest tag is <strong>"::gallery dir='toto'::"</strong>. This tag will display inside the post a gallery of pictures wich are inside the "toto" directory under the shape of linked thumbnails.</dd>
+  <dd>The tag can be different in function of the things to be display and of the shapes you want to display them. For example, to display the pictures "img1.jpg" and "img4.jpg" which are inside the directory "toto" the tag is written like this <strong>"::gallery imgurl='toto;img1.jpg;img4.jpg'::"</strong></dd>
+  
+  <dt>Insertion interface</dt>
+  <dd>After plugin installation an icon is displayed in the post edition bar (<img src='index.php?pf=GalleryInsert/icon.png'>). A clic on this icon made appears an insertion window which allow to generate tag and insert it into the current post.<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/insert.jpg'><img width='200px' src='index.php?pf=GalleryInsert/locales/img/insert.jpg'></a><br />
+  After selected the directory you can select pictures to display or you can select the whole directiry. You can also choose different options to be used.</dd>
+</dl>
+
+<h3>Size options</h3>
+<dl>
+  <dt>Displayed sizes</dt>
+  <dd>To select the size of the displayed picture the option is <strong>thumb='xx'</strong>. Where xx can take different values :
+  <ul><li>sq=square</li><li>t=miniature</li><li>s=small</li><li>m=medium</li><li>o=original</li></ul></dd>
+  <dd>To select the size of the picture linked the option is <strong>linkto='xx'</strong>. Where xx can take different values :
+  <ul><li>sq=square</li><li>t=miniature</li><li>s=small</li><li>m=medium</li><li>o=original</li><li>none=no link</li></ul></dd>
+  <dd>Example, to display the directory "toto" in medium size without link : <strong>::gallery dir='toto' thumb='m' linkto='none'::</strong></dd>
+</dl>
+
+<h3>Jquery scripts</h3>
+<dl>
+  <dt>Display with divbox</dt>
+  <dd>The GalleryInsert plugin includes the jquery divbox module (<a target='_blank' href='http://jquery.phpbasic.com/divbox'>http://jquery.phpbasic.com/divbox</a>) wich allow to zoom on a picture but also to display every media type (mp3, flv, ...). By activating the option into the administrator interface it allows to zoom on pictures like a lightbox effect but also to explore all your multimedia files!</dd>
+  <dd>Note that this option is not activated by default and if you activate it you will have to regenerate the already published post. To do this you nloy have to open the post and save it once more.</dd>
+  <dd>Divbox example :<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex-divbox1.jpg'><img width='120px' src='index.php?pf=GalleryInsert/locales/img/ex-divbox1.jpg'></a>
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex-divbox2.jpg'><img width='120px' src='index.php?pf=GalleryInsert/locales/img/ex-divbox2.jpg'></a></dd>
+  
+  <dt>Display with carousel</dt>
+  <dd>The jquery jcarousel module (<a target='_blank' href='http://sorgalla.com/jcarousel/'>http://sorgalla.com/jcarousel/</a>) has been replaced by the tosrus jquery module (<a target='_blank' href='http://tosrus.frebsite.nl'>http://tosrus.frebsite.nl</a>) which allow to display the pictures list under carousel format. It also allow to display the icon of media files if the divbox option is activated. By default galleries are not displayed under the carousel format : you firstly have to activate the "carousel" option into the administration interface and then to add the "carousel" option in the gallery tag (example <strong>"::gallery dir='toto' carousel::"</strong>)</dd>
+  <dd>Carousel example :<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex-carousel-tosrus.jpg'><img width='200px' src='index.php?pf=GalleryInsert/locales/img/ex-carousel-tosrus.jpg'></a></dd>
+  <!--<dd>The GalleryInsert plugin includes the jquery jcarousel module (<a target='_blank' href='http://sorgalla.com/jcarousel/'>http://sorgalla.com/jcarousel/</a>) which allow to display the pictures list under carousel format. It also allow to display the icon of media files if the divbox option is activated. By default galleries are not displayed under the carousel format : you firstly have to activate the "carousel" option into the administration interface and then to add the "carousel" option in the gallery tag (example <strong>"::gallery dir='toto' carousel::"</strong>)</dd>
+  <dd>Carousel example :<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex-carousel.jpg'><img width='200px' src='index.php?pf=GalleryInsert/locales/img/ex-carousel.jpg'></a></dd>-->
+  
+  <dt>Display with "galleria"</dt>
+  <dd>The GalleryInsert plugin includes the jquery galleria module (<a target='_blank' href='http://galleria.aino.se/'>http://galleria.aino.se/</a>) which allows to display pictures under a better gallery shape. By default galleries are not displayed under the "galleria" format : you firstly have to activate the "galleria" option into the administration interface and then to add the "galleria" option in the gallery tag (example <strong>"::gallery dir='toto' caroussel::"</strong>). Notice that the size of the galleria and thumbnails can now be changed in the plugin options.</dd>
+  <dd>Galleria example :<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex-galleria.jpg'><img width='200px' src='index.php?pf=GalleryInsert/locales/img/ex-galleria.jpg'></a></dd>
+</dl>
+
+<h3>Pictures metadatas</h3>
+<dl>
+  <dt>Pictures metadatas</dt>
+  <dd>It is possible to automatically integrate pictures metadatas. For this you have to specify the "showmeta" option in the gallery tag (example : <strong>"::gallery dir='toto' showmeta::"</strong>). Then, at the construction ofd the gallery the plugin will automatically detect pictures metadata and add them after the picture title. The shape of the metadata display is defined by the metadata string which can be modified in the administration options.</dd>
+  <dd>Example of pictures metadatas :<br />
+  <a target='_blank' href='index.php?pf=GalleryInsert/locales/img/ex-metadata.jpg'><img width='200px' src='index.php?pf=GalleryInsert/locales/img/ex-metadata.jpg'></a></dd>
+  <dd>The default string for metadata display is : <strong>[%FocalLength% - %FNumber% - %Exposure% - ISO:%ISOSpeedRatings%]</strong>. Possible insertions are :<ul><li>%Title%</li><li>%Description%</li><li>%Location%</li><li>%DateTimeOriginal%</li><li>%Make%</li><li>%Model%</li><li>%Lens%</li><li>%ExposureProgram%</li><li>%Exposure%</li><li>%FNumber%</li><li>%ISOSpeedRatings%</li><li>%FocalLength%</li><li>%ExposureBiasValue%</li><li>%MeteringMode%</li></ul></dd>
+</dl>
+
+<h3>Others</h3>
+<dl>
+  <dt>Gallery xhtml code génération</dt>
+  <dd>In order to be more efficient the xhtml code of a gallery is not generated at each post display but only once at the post saving. Then when the post is dieplayed the gallery code is directly available. The disadvantage of this method is that the gallery is not fully dynamic : the gallery code must be generated again if the media directory as changed, if you modify some options or if the plugin is updated.</dd>
+  <dd>For example if you have created a gallery with the carousel option, but if after you disactivate the carousel option into the administration panel then the gallery will not be displayed well because it will be trying to use no more accessible jquery script. To solve the problem you hav to open the post and just save it one more time.</dd>
+  
+  <dt>Autoupdate gallery in posts</dt>
+  <dd>In the administration panel you have the list of posts that contains a gallery. This list allows you to quickly access to your galleries, but it also allows you to generate all xhtml galleries codes with one click. But be careful, even if this function has been tested we cannot warranty that it should not cause some problems in your blog. For this reason we recommend that you save your blog database before the first use of this function.</dd>
+  
+
+  <dt>Thumbnail display</dt>
+  <dd>You can modify ths display style of thumbnails via the moreCSS plugin or directly in the current theme styls.css (example : <strong>#galleryinsert_tn { border: 1px solid black; margin: 0px 3px 0px 0px; }</strong>).</dd>
+  
+</dl>
+
+</body>
+</html>

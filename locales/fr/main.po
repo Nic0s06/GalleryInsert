@@ -1,0 +1,149 @@
+msgid "Choose a directory"
+msgstr "Choisissez un répertoire"
+
+msgid "Add all directory"
+msgstr "Ajouter tout le répertoire"
+
+msgid "Select pictures"
+msgstr "Sélectionner les images"
+
+msgid "Add selected pictures"
+msgstr "Ajouter les images sélectionnées"
+
+msgid "Close"
+msgstr "Fermer"
+
+msgid "No picture in directory"
+msgstr "Aucune image dans le répertoire"
+
+msgid "Displayed size"
+msgstr "Taille affichée"
+
+msgid "Size of the displayed picture"
+msgstr "Taille de l'image affichée"
+
+msgid "Link to size"
+msgstr "Liens vers taille"
+
+msgid "Choose <i>none</i> for no link"
+msgstr "Choisir <i>none</i> pour pas de lien"
+
+msgid "No picture in directory"
+msgstr "Aucune image dans le répertoire"
+
+msgid "Select at least one picture"
+msgstr "Sélectionnez au moins une image"
+
+msgid "Default options saved."
+msgstr "Paramètres sauvegardés."
+
+msgid "Default options restored."
+msgstr "Paramètres restaurés."
+
+msgid "Save default options"
+msgstr "Sauver les paramètres"
+
+msgid "Restore default options"
+msgstr "Restaurer les paramètres"
+
+msgid "Select all"
+msgstr "Tout sélectionner"
+
+msgid "Select none"
+msgstr "Aucune sélection"
+
+msgid "Invert selection"
+msgstr "Inverser la sélection"
+
+msgid "No media directory found"
+msgstr "Aucun répertoire média trouvé"
+
+msgid "Enable GalleryInsert"
+msgstr "Activer GalleryInsert"
+
+msgid "List of posts with gallery"
+msgstr "Liste des billets avec galerie"
+
+msgid "No post with gallery found"
+msgstr "Aucun billet avec galerie n'a été trouvé"
+
+msgid "Update gallery in posts"
+msgstr "Mise à jour des galeries dans les billets"
+
+msgid "Update of posts can be useful after a plugin upgrade, it will regenerate the gallery in all posts.<br />It is recommended to make a backup of your database before... Just in case !"
+msgstr "La mise à jour des billets avec galerie peut-être nécessaire après une mise à jour du plugin.<br />Il est très recommandé de faire une sauvegarde de votre base de données avant cela... Juste au cas où !"
+
+msgid "Updating posts %d to %d."
+msgstr "Mise à jour des posts %d à %d."
+
+msgid "Updating posts %d on %d."
+msgstr "Mise à jour des posts %d sur %d."
+
+msgid "Update done"
+msgstr "Mise à jour effectuée"
+
+msgid "Enable Divbox"
+msgstr "Activer Divbox"
+
+msgid "Enable Carousel"
+msgstr "Activer Carousel"
+
+msgid "Enable Galleria"
+msgstr "Activer Galleria"
+
+msgid "Enable jgallery"
+msgstr "Activer jgallery"
+
+msgid "Save configuration"
+msgstr "Enregistrer la configuration"
+
+msgid "Configuration successfully updated"
+msgstr "Configuration mise à jour avec succès"
+
+msgid "Metadata string"
+msgstr "Chaîne des métadonnées"
+
+msgid "Show pictures metadata"
+msgstr "Afficher les métadonnées des images"
+
+msgid "The metadata string is used to add picture metadata (if available) after the picture title. See help."
+msgstr "La chaîne des métadonnées est utilisée pour ajouter les métadonnées aux titres des images. Voir l'aide."
+
+msgid "The metadata string is used to add picture metadata (if available) after the picture title."
+msgstr "La chaîne des métadonnées est utilisée pour ajouter les métadonnées aux titres des images."
+
+msgid "Hide private pictures"
+msgstr "Cacher les images privées"
+
+msgid "+ Show private pictures"
+msgstr "+ Afficher les images privées"
+
+msgid "In order to show private pictures you have to enter a password."
+msgstr "Afin d'afficher les images privées vous devez entrer un mot de passe."
+
+msgid "Enable private pictures"
+msgstr "Activer la gestion des images privées"
+
+msgid "Password for private pictures"
+msgstr "Mot de passe pour l'affichage des images privées"
+
+msgid "Let empty for no private picture management"
+msgstr "Laisser vide pour ne pas gérer les images privées"
+
+msgid "If you change order of images you must use the button [Add selected pictures]"
+msgstr "Si vous modifiez l'ordre des images vous devez utiliser le bouton [Ajouter images sélectionnées]"
+
+msgid "Force include JQuery (only use for themes that don't inlude JQuery)"
+msgstr "Forcer l'inclusion de JQuery (à n'utiliser que pour les thèmes qui n'incluent pas JQuery à la base)"
+
+msgid "Galleria Width is given in percentage (good for responsive design) or in pixel. Ex : 100% or 500."
+msgstr "La largeur de la Galleria (Width) est donnée en pourcentage (idéal pour le responsive design) ou en pixel. Ex : 100% ou 500."
+
+msgid "Galleria Height is given in pixel or in width ratio (good for responsive design). Ex : 450 or 0.5625."
+msgstr "La hauteur de la Galleria (Height) est donnée en pixel ou en ratio de la largeur (idéal pour le responsive design). Ex : 450 ou 0.5625."
+
+msgid "Galleria Thumbnail Size is given in pixel. Ex : 70."
+msgstr "La taille des miniatures (Thumbnail Size) est donnée en pixel. Ex : 70."
+
+msgid "Possible insertions are :"
+msgstr "Les insertions possibles sont les suivantes :"
