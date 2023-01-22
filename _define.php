@@ -1,21 +1,27 @@
 <?php
-// -- BEGIN LICENSE BLOCK ----------------------------------
-//
-// This file is a plugin for Dotclear 2.
-// 
-// Copyright (c) 2013 FredM
-// Licensed under the GPL version 2.0 license.
-// A copy of this license is available in LICENSE file or at
-// http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-//
-// -- END LICENSE BLOCK ------------------------------------
-if (!defined('DC_RC_PATH')) { return; }
+/*
+ *  -- BEGIN LICENSE BLOCK ----------------------------------
+ *
+ *  This file is part of GalleryInsert, a plugin for DotClear2.
+ *
+ *  Licensed under the GPL version 2.0 license.
+ *  See LICENSE file or
+ *  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ *
+ *  -- END LICENSE BLOCK ------------------------------------
+ */
 
 $this->registerModule(
-	/* Name */			"GalleryInsert",
-	/* Description*/		"Insert pictures gallery inside your post",
-	/* Author */			"Fred",
-	/* Version */			'0.412',
-	/* Permissions */		'usage,contentadmin'
+    "GalleryInsert", // Name
+    "Insert pictures gallery inside your post", // Description
+    "Fred, Nicolas Roudaire", // Author
+    '0.5.0', // Version
+    [
+        'permissions' => dcCore::app()->auth->makePermissions([dcAuth::PERMISSION_CONTENT_ADMIN, dcAuth::PERMISSION_USAGE]),
+        'type' => 'plugin',
+        'dc_min' => '2.24',
+        'requires' => [['core', '2.24']],
+        'support' => 'https://forum.dotclear.org/viewtopic.php?pid=348953#p348953', // previous one : https://forum.dotclear.org/viewtopic.php?id=45455
+        'details' => 'https://plugins.dotaddict.org/dc2/details/GalleryInsert'
+    ]
 );
-?>
