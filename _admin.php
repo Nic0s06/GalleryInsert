@@ -18,7 +18,7 @@ if (!defined('DC_CONTEXT_ADMIN')) {
 dcCore::app()->menu[dcAdmin::MENU_PLUGINS]->addItem(
     'GalleryInsert',
     dcCore::app()->adminurl->get('admin.plugin.GalleryInsert'),
-    dcPage::getPF('GalleryInsert/icon.pvg'),
+    dcPage::getPF('GalleryInsert/icon.png'),
     preg_match('/plugin.php\?p=GalleryInsert(&.*)?$/', $_SERVER['REQUEST_URI'])
 );
 
@@ -27,7 +27,7 @@ dcCore::app()->addBehavior('adminPageHeaders', [GalleryInsertBehaviors::class, '
 dcCore::app()->addBehavior('adminRelatedHeaders', [GalleryInsertBehaviors::class, 'jsLoad']);
 dcCore::app()->addBehavior('adminDashboardHeaders', [GalleryInsertBehaviors::class, 'jsLoad']);
 dcCore::app()->addBehavior('ckeditorExtraPlugins', [GalleryInsertBehaviors::class, 'ckeditorExtraPlugins']);
-dcCore::app()->addBehavior('coreAfterPostContentFormat', ['GalleryInsertbehaviorContent', 'coreAfterPostContentFormat']);
+dcCore::app()->addBehavior('coreAfterPostContentFormat', [GalleryInsertbehaviorContent::class, 'coreAfterPostContentFormat']);
 
 class GalleryInsertBehaviors
 {
@@ -40,11 +40,9 @@ class GalleryInsertBehaviors
         }
 
         return
-        '<script type="text/javascript" src="index.php?pf=GalleryInsert/post.js"></script>' .
-        '<script type="text/javascript">' . "\n" .
-        "//<![CDATA[\n" .
+        '<script src="index.php?pf=GalleryInsert/post.js"></script>' .
+        "<script>\n" .
         dcPage::jsJson('jsToolBar.prototype.elements.GalleryInsertBehaviors.title', 'GalleryInsert') .
-        "\n//]]>\n" .
         "</script>\n";
     }
 

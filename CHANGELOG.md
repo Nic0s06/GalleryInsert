@@ -1,5 +1,11 @@
 # Plugin DotClear - GalleryInsert
 
+# v0.5.1 - 2023-01-23
+
+- Restore icon in menu
+- Fix import script in admin
+- Add translations. Thanks to Pierre Van Glabeke
+
 # v0.5.0 - 2023-01-22
 
 - Update code for dotclear 2.24

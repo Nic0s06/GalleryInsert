@@ -11,8 +11,6 @@
  *  -- END LICENSE BLOCK ------------------------------------
  */
 
-\App\Log::getInstance()->debug('public');
-
 if (!defined('DC_RC_PATH')) {
     return;
 }

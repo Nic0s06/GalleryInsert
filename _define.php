@@ -15,7 +15,7 @@ $this->registerModule(
     "GalleryInsert", // Name
     "Insert pictures gallery inside your post", // Description
     "Fred, Nicolas Roudaire", // Author
-    '0.5.0', // Version
+    '0.5.1', // Version
     [
         'permissions' => dcCore::app()->auth->makePermissions([dcAuth::PERMISSION_CONTENT_ADMIN, dcAuth::PERMISSION_USAGE]),
         'type' => 'plugin',
