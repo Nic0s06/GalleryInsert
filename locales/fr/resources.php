@@ -11,6 +11,4 @@
  *  -- END LICENSE BLOCK ------------------------------------
  */
 
-if (!isset(dcCore::app()->resources['help']['galleryinserthelp'])) {
-    dcCore::app()->resources['help']['galleryinserthelp'] = __DIR__ . '/galleryinserthelp.html';
-}
+dcCore::app()->resources['help']['galleryinsert'] = __DIR__ . '/help/galleryinsert.html';
