@@ -18,5 +18,5 @@ if (!defined('DC_CONTEXT_ADMIN')) {
 if (!empty($_GET['popup'])) {
     include __DIR__ . '/popup.php';
 } else {
-    include __DIR__ . '/admin.php';
+    include __DIR__ . '/config.php';
 }

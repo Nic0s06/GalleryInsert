@@ -1,228 +1,253 @@
 # Language: Français
-# Module: GalleryInsert - 0.413
+# Module: GalleryInsert - 0.5.2
 # Date: 2018-02-16 01:55:29
 # Translated with translater 2018.02.14
-
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: GalleryInsert 0.413\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2018-02-16T01:55:29+00:00\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-04 10:05+0100\n"
 "Last-Translator: brol\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Revision-Date: 2023-01-25 08:21+0100\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: _public.php:121
-#: _public.php:186
 msgid "Hide private pictures"
 msgstr "Cacher les images privées"
 
-#: _public.php:131
-#: _public.php:195
 msgid "+ Show private pictures"
 msgstr "+ Afficher les images privées"
 
-#: _public.php:134
-#: _public.php:198
 msgid "In order to show private pictures you have to enter a password."
 msgstr "Afin d'afficher les images privées vous devez entrer un mot de passe."
 
-#: admin.php:76
-msgid "Updating posts %d to %d."
-msgstr "Mise à jour des posts %d à %d."
-
-#: admin.php:77
+#, php-format
 msgid "Updating posts %d on %d."
 msgstr "Mise à jour des posts %d sur %d."
 
-#: admin.php:110
 msgid "next"
 msgstr "suiv"
 
-#: admin.php:112
 msgid "Update done"
 msgstr "Mise à jour effectuée"
 
-#: admin.php:134
 msgid "Enable GalleryInsert"
 msgstr "Activer GalleryInsert"
 
-#: admin.php:137
 msgid "Enable Divbox"
 msgstr "Activer Divbox"
 
-#: admin.php:140
 msgid "Enable Carousel"
 msgstr "Activer Carousel"
 
-#: admin.php:143
 msgid "Enable jgallery"
 msgstr "Activer jgallery"
 
-#: admin.php:146
 msgid "Enable Galleria"
 msgstr "Activer Galleria"
 
-#: admin.php:154
-#: admin.php:166
+msgid "Galleria Width"
+msgstr ""
+
+msgid "Galleria Height"
+msgstr ""
+
+msgid "Galleria Thumbnail Size"
+msgstr "Taille des miniatures"
+
 msgid "Help"
 msgstr "Aide"
 
-#: admin.php:157
+#, php-format
 msgid "Galleria Width is given in percentage (good for responsive design) or in pixel. Ex : 100% or 500."
 msgstr "La largeur de la Galleria (Width) est donnée en pourcentage (idéal pour le responsive design) ou en pixel. Ex : 100% ou 500."
 
-#: admin.php:158
 msgid "Galleria Height is given in pixel or in width ratio (good for responsive design). Ex : 450 or 0.5625."
 msgstr "La hauteur de la Galleria (Height) est donnée en pixel ou en ratio de la largeur (idéal pour le responsive design). Ex : 450 ou 0.5625."
 
-#: admin.php:159
 msgid "Galleria Thumbnail Size is given in pixel. Ex : 70."
 msgstr "La taille des miniatures (Thumbnail Size) est donnée en pixel. Ex : 70."
 
-#: admin.php:163
 msgid "Metadata string"
 msgstr "Chaîne des métadonnées"
 
-#: admin.php:169
 msgid "The metadata string is used to add picture metadata (if available) after the picture title."
 msgstr "La chaîne des métadonnées est utilisée pour ajouter les métadonnées aux titres des images."
 
-#: admin.php:170
 msgid "Possible insertions are :"
 msgstr "Les insertions possibles sont les suivantes :"
 
-#: admin.php:174
 msgid "Style string"
 msgstr "Styles de la galerie"
 
-#: admin.php:186
-msgid "Private picture"
-msgstr "Image privée"
-
-#: admin.php:189
-#: popup.php:415
-msgid "Enable private pictures"
-msgstr "Activer la gestion des images privées"
-
-#: admin.php:191
-#: popup.php:417
-msgid "Password for private pictures"
-msgstr "Mot de passe pour l'affichage des images privées"
-
-#: admin.php:218
 msgid "List of posts with gallery"
 msgstr "Liste des billets avec galerie"
 
-#: admin.php:224
 msgid "No post with gallery found"
 msgstr "Aucun billet avec galerie n'a été trouvé"
 
-#: admin.php:227
 msgid "Update gallery in posts"
 msgstr "Mise à jour des galeries dans les billets"
 
-#: admin.php:228
 msgid "Update of posts can be useful after a plugin upgrade, it will regenerate the gallery in all posts.<br />It is recommended to make a backup of your database before... Just in case !"
-msgstr "La mise à jour des billets avec galerie peut-être nécessaire après une mise à jour du plugin.<br />Il est très recommandé de faire une sauvegarde de votre base de données avant cela... Juste au cas où !"
+msgstr "La mise à jour des billets avec galerie peut être nécessaire après une mise à jour du plugin.<br />Il est très recommandé de faire une sauvegarde de votre base de données avant cela... Juste au cas où !"
 
-#: popup.php:140
+msgid "Title"
+msgstr ""
+
+msgid "Location"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "Manufacturer"
+msgstr ""
+
+msgid "Model"
+msgstr ""
+
+msgid "Lens"
+msgstr ""
+
+msgid "Program"
+msgstr ""
+
+msgid "Speed"
+msgstr ""
+
+msgid "Aperture"
+msgstr ""
+
+msgid "ISO"
+msgstr ""
+
+msgid "Focal"
+msgstr ""
+
+msgid "Exposure Bias"
+msgstr ""
+
+msgid "Metering mode"
+msgstr ""
+
+msgid "Not defined"
+msgstr ""
+
+msgid "Manual"
+msgstr ""
+
+msgid "Normal program"
+msgstr ""
+
+msgid "Aperture priority"
+msgstr ""
+
+msgid "Shutter priority"
+msgstr ""
+
+msgid "Creative program"
+msgstr ""
+
+msgid "Action program"
+msgstr ""
+
+msgid "Portait mode"
+msgstr ""
+
+msgid "Landscape mode"
+msgstr ""
+
+msgid "Unknow"
+msgstr ""
+
+msgid "Average"
+msgstr ""
+
+msgid "Center-weighted average"
+msgstr ""
+
+msgid "Spot"
+msgstr ""
+
+msgid "Multi spot"
+msgstr ""
+
+msgid "Pattern"
+msgstr ""
+
+msgid "Partial"
+msgstr ""
+
 msgid "Select at least one picture"
 msgstr "Sélectionnez au moins une image"
 
-#: popup.php:263
 msgid "Default options saved."
 msgstr "Paramètres sauvegardés."
 
-#: popup.php:281
 msgid "Default options restored."
 msgstr "Paramètres restaurés."
 
-#: popup.php:286
 msgid "Choose a directory"
 msgstr "Choisissez un répertoire"
 
-#: popup.php:303
 msgid "No media directory found"
 msgstr "Aucun répertoire média trouvé"
 
-#: popup.php:319
 msgid "No picture in directory"
 msgstr "Aucune image dans le répertoire"
 
-#: popup.php:323
 msgid "Select pictures"
 msgstr "Sélectionner les images"
 
-#: popup.php:359
 msgid "Select all"
 msgstr "Tout sélectionner"
 
-#: popup.php:360
-msgid "Select none"
-msgstr "Aucune sélection"
-
-#: popup.php:386
 msgid "Displayed size"
 msgstr "Taille affichée"
 
-#: popup.php:387
 msgid "Size of the displayed picture"
 msgstr "Taille de l'image affichée"
 
-#: popup.php:390
 msgid "Link to size"
 msgstr "Liens vers taille"
 
-#: popup.php:391
 msgid "Choose <i>none</i> for no link"
 msgstr "Choisir <i>none</i> pour pas de lien"
 
-#: popup.php:400
-msgid "View form"
-msgstr "Afficher sous forme"
+msgid "Afficher sous forme"
+msgstr ""
 
-#: popup.php:412
 msgid "Show pictures metadata"
 msgstr "Afficher les métadonnées des images"
 
-#: popup.php:418
+msgid "Password for private pictures"
+msgstr "Mot de passe pour l'affichage des images privées"
+
 msgid "Let empty for no private picture management"
 msgstr "Laisser vide pour ne pas gérer les images privées"
 
-#: popup.php:420
 msgid "Save default options"
 msgstr "Sauver les paramètres"
 
-#: popup.php:421
 msgid "Restore default options"
 msgstr "Restaurer les paramètres"
 
-#: popup.php:428
 msgid "Add all directory"
 msgstr "Ajouter tout le répertoire"
 
-#: popup.php:429
 msgid "Add selected pictures"
 msgstr "Ajouter les images sélectionnées"
 
-#: popup.php:430
 msgid "Close"
 msgstr "Fermer"
 
-#: popup.php:432
 msgid "If you change order of images you must use the button [Add selected pictures]"
 msgstr "Si vous modifiez l'ordre des images vous devez utiliser le bouton [Ajouter images sélectionnées]"
 
-msgid "The metadata string is used to add picture metadata (if available) after the picture title. See help."
-msgstr "La chaîne des métadonnées est utilisée pour ajouter les métadonnées aux titres des images. Voir l'aide."
-
-msgid "Force include JQuery (only use for themes that don't inlude JQuery)"
-msgstr "Forcer l'inclusion de JQuery (à n'utiliser que pour les thèmes qui n'incluent pas JQuery à la base)"
-
-msgid "Insert pictures gallery inside your post"
-msgstr "Intégrer une galerie d'image directement dans un billet"
-
+msgid "View form"
+msgstr "Afficher sous forme"

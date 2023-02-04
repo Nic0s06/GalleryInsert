@@ -1,5 +1,10 @@
 # Plugin DotClear - GalleryInsert
 
+# v0.5.2 - 2023-02-04
+
+- More translations. Thanks to Pierre Van Glabeke. Closes #2
+- Markup for gallery insertion with ':::' instead of '::'
+
 # v0.5.1 - 2023-01-23
 
 - Restore icon in menu

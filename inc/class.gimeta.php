@@ -124,8 +124,8 @@ class giMeta
         // Exposure
         if (!empty($m['Exposure'])) {
             @eval('$s = ' . $m['Exposure'] . ';');
-            if ($sm >= 0.5) {
-                $metas['Exposure'][1] = $sm . 's';
+            if ($m >= 0.5) {
+                $metas['Exposure'][1] = $m . 's';
             } else {
                 $metas['Exposure'][1] = $m['Exposure'] . 's';
             }

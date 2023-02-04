@@ -108,7 +108,7 @@ $(function() {
 			options += ' private=\'' + add_rep_form.privatepicture_password.value + '\'';
 		}
 
-		texte = '::gallery dir=\'' + add_rep_form.selected_rep.value + '\''+ options +'::';
+		texte = ':::gallery dir=\'' + add_rep_form.selected_rep.value + '\''+ options +'::';
 
 		if ((window.opener.the_toolbar !== undefined)) {
 			var tb = window.opener.the_toolbar;
@@ -162,7 +162,7 @@ $(function() {
 			options += ' private=\'' + select_img_form.privatepicture_password.value + '\'';
 		}
 
-		texte = '::gallery imgurl=\'' + listimages + '\''+ options +'::';
+		texte = ':::gallery imgurl=\'' + listimages + '\''+ options +'::';
 
 		if ((window.opener.the_toolbar !== undefined)) {
 			var tb = window.opener.the_toolbar;
@@ -302,7 +302,7 @@ if (empty($liste_rep)) {
 echo '</form>';
 
 if ($selected_rep) {
-    // Liste des images du r�pertoire $selected_rep
+    // Liste des images du répertoire $selected_rep
     //$my_media = new dcMedia('image');
     $my_media = new dcMedia();
     $my_media->chdir($selected_rep);
@@ -319,7 +319,7 @@ if ($selected_rep) {
         echo '<p>' . form::hidden(['selected_rep'], $selected_rep);
         echo dcCore::app()->formNonce() . '</p>';
 
-        // Afficher les images du r�pertoire
+        // Afficher les images du répertoire
         echo "\n<ul id='boxes'>\n";
         foreach ($f['files'] as $k => $v) {
             //$media_id = $v->media_id;
@@ -401,7 +401,7 @@ if ($selected_rep) {
         }
 
         $t = ($s->carousel_enabled || $s->galleria_enabled || $s->jgallery_enabled) ? '' : ' style="display:none"';
-        echo '<p' . $t . '>' . __('Afficher sous forme') . ' : ' . "\n";
+        echo '<p' . $t . '>' . __('View form') . ' : ' . "\n";
         echo '<label class="classic">' . form::radio(['display_chape'], 'default', ($default_display_chape == 'default')) . ' Default</label> ' . "\n";
         $t = ($s->carousel_enabled) ? '' : ' style="display:none"';
         echo '<label ' . $t . ' class="classic">' . form::radio(['display_chape'], 'carousel', ($default_display_chape == 'carousel')) . ' Carousel</label> ' . "\n";
