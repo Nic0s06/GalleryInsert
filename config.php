@@ -13,7 +13,7 @@
 
 $s = dcCore::app()->blog->settings->galleryinsert;
 $p_url = dcCore::app()->admin->getPageURL();
-$default_tab = 'settings';
+$default_tab = 'galleryinsert_settings';
 
 if (isset($_POST['save'])) {
     $s->put('galleryinsert_enabled', !empty($_POST['galleryinsert_enabled']));
@@ -32,6 +32,7 @@ if (isset($_POST['save'])) {
 
 // Updating posts (5 by 5)
 if (isset($_REQUEST['doupdate'])) {
+    $default_tab = 'galleryinsert_list';
     $params = [];
     $params['post_type'] = '';
     $params['sql'] = "AND (post_content LIKE '%::gallery%' OR post_excerpt LIKE '%::gallery%') ";

@@ -11,7 +11,7 @@
  *  -- END LICENSE BLOCK ------------------------------------
  */
 
-class giMeta
+class GalleryInsertMeta
 {
     public static function imgMeta($src)
     {
@@ -60,11 +60,6 @@ class giMeta
         }
 
         $m = imageMeta::readMeta($src);
-
-        //echo '<HR>';
-        //foreach ($m as $k => $v)
-        //	echo $k . '=' . $v . '<BR>';
-        //echo '<HR>';
 
         if (empty($m['Make'])) {
             return false;

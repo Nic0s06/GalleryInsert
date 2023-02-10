@@ -7,9 +7,8 @@ default:;
 
 config: clean manifest
 	mkdir -p $(DIST)/$(PLUGIN_NAME)
-	cp -pr _*.php CHANGELOG.md COPYING MANIFEST README.md						\
-	config.php popup.php icon.png media								\
-	inc divbox galleria.1.5.7 jgallery-1.6.2 locales tosrus index.php $(DIST)/$(PLUGIN_NAME)/
+	cp -pr _*.php CHANGELOG.md LICENSE MANIFEST README.md					\
+	js inc locales media config.php popup.php tpl index.php $(DIST)/$(PLUGIN_NAME)/
 	find $(DIST) -name '*~' -exec rm \{\} \;
 
 dist: config

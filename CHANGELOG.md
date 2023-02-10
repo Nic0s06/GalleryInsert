@@ -1,5 +1,10 @@
 # Plugin DotClear - GalleryInsert
 
+# v0.6.0 - 2023-02-10
+
+- Fix issue #3 : missing files in plugin archive
+- Refactoring : move classes in theirs own file, remove comments,...
+
 # v0.5.2 - 2023-02-04
 
 - More translations. Thanks to Pierre Van Glabeke. Closes #2
