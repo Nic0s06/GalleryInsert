@@ -1,5 +1,9 @@
 # Plugin DotClear - GalleryInsert
 
+# v0.6.1 - 2023-05-05
+
+- Fix issue preventing Galleria javascript file to be loaded. Thanks to [galisurf](https://github.com/galisurf)
+
 # v0.6.0 - 2023-02-10
 
 - Fix issue #3 : missing files in plugin archive

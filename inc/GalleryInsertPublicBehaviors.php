@@ -49,7 +49,7 @@ class GalleryInsertPublicBehaviors
         if ($settings->galleria_enabled) {
             echo self::jsLoad('js/galleria.1.5.7/galleria-1.5.7.min.js');
             echo self::cssLoad('js/galleria.1.5.7/themes/classic/galleria.classic.css');
-            echo '<scrip type="text/javascript">Galleria.loadTheme("' . dcPage::getPF('GalleryInsert/js/galleria.1.5.7/themes/classic/galleria.classic.min.js') . '")</script>' . "\n";
+            echo self::jsLoad('GalleryInsert/js/galleria.1.5.7/themes/classic/galleria.classic.min.js');
             $th_size = floatval($settings->galleria_th_size);
             echo '<style type="text/css">
 			.galleria-theme-classic .galleria-thumbnails .galleria-image{width:' . ($th_size * 1.3) . 'px;height:' . $th_size . 'px;}
